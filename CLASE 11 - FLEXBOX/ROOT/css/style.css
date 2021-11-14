@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+/* border box es para respetar los bordes y no deja que se sumen mas piceles asi esten escritos */
+
+#container{
+    height: 100vh; /* se hace responsive, para que el footer esté abajo */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background: #E5E5E5;
+}
+
+#Inicio, #footer{
+    height: 100px;
+    background-color:#222222 ;
+    display: flex; /* colocar a un lado del otro */
+    align-items: center ; /* centrar a sus hijitos */
+    justify-content: space-between; /* manda a los extremos */
+    padding: 20px;
+}
+
+.inicio_menu a, .footer_menu a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 15px;
+}
+
+.inicio_menu ul{
+    list-style: none; 
+    display: flex; /* para se coloquen horizontales */
+}
+
+.footer_menu ul{
+    list-style: none; 
+    flex-direction: column;
+}
+
+
+/* CONTENIDO */
+
+#contenido{
+    display: flex; /* nos pone uno al lado del otro */
+    justify-content: center;
+    flex-wrap: wrap; /* ajustar la linea,  fluir en varias líneas  */
+}
+
+
+.contenido_promocion{
+    width: 490px; /* tamaño de la imagen exacta */
+    height: 350px;
+    background-image: url("../img/foto\ moto.jpeg");
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin:10px;
+}
+
+.contenido_promocion h3{
+    color: #FC200C;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.contenido_promocion h3 span{
+    color: white;
+}
+
+.contenido_titulo{
+    width: 490px;
+    height: 350px;
+    background-color: white;
+    display: flex; /* se coloca vertical como estaba, no aplica para los nietos */
+    flex-direction: column; /* se coloca vertical como estaba */
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    border-radius: 5px;
+    margin:10px;
+}
+
+.contenido_titulo h3{
+    text-align: center;
+    color:#FC200C;
+    font-weight: 700;
+}
+
+.contenido_listapizzas{
+    width: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    /* border:yellowgreen 1px solid; -- para saber donde estoy*/
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.contenido_listapizzas ol{
+    line-height: 30px;
+}
